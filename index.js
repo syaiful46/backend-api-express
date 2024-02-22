@@ -52,6 +52,7 @@ app.post("/datasekolah", (req, res) => {
       const data = {
         id: fields.insertId,
         isSuccess: fields.affectedRows,
+        data: req.body,
       };
       response(200, data, "sekolah added successfully", res);
     }
